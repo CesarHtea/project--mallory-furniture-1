@@ -1,0 +1,393 @@
+body {
+  margin: 0;
+}
+
+/* Header Styles Start */
+
+.header-container {
+  display: flex;
+  background-color: #222;
+  color: #FFF;
+  height: 70px;
+  align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+#logo-M {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin-left: 15px;
+  position: relative;
+  color: #FFF;
+  bottom: 5px;
+  z-index: 2;  
+}
+
+.logo {
+  text-decoration: none;
+}
+
+#logo-F {
+  font-family: 'Playfair Display', serif;
+  color: #999;
+  font-size: 30px;
+  position: relative;
+  top: 5px;
+  left: -10px;
+}
+
+.header-container__nav {
+  list-style-type: none;
+  border-right: 2px solid #FFF;
+  padding: 0 10px;
+  padding-right: 30px;
+}
+
+.header-container__nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.header-container__categories {
+  list-style-type: none;
+  color: #2196F3;
+  border-right: 2px solid #FFF; 
+  padding: 0 15px;
+}
+
+.header-container__categories .link {
+  text-decoration: none;
+  color: #2196F3;
+}
+
+.header-container__categories .selected .link {
+  color: #FFF;
+}
+
+.header-container__categories li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.fa-shopping-cart {
+  text-align: left;
+  background: #FFC107;
+  margin-left: 20px;
+  font-size: 24px;
+  padding: 23px 15px;
+  color: #444;
+}
+
+.fa-shopping-cart.hidden {
+  display: none;
+}
+
+/* Header Styles End */
+
+/* Banner Styles Start */
+
+.banner-container {
+  text-align: center;
+  background-image: url('./images/landing-splash-bg.png');
+  background-size: cover;
+  color: #FFF;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-container__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  position: relative;
+  top: 100px;
+}
+
+.banner-container__subtitle {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 26px;
+  position: relative;
+  top: 70px;
+}
+
+/* Banner Styles End */
+
+/* Featured Products Styles Start */
+
+.products {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.products__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  padding-left: 10px;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.products__subtitle {
+  padding-left: 10px;
+  color: #999;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.products__products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.product__link {
+  text-decoration: none;
+}
+
+.product__link h4 {
+  color: #222;
+}
+
+.product__card {
+  width: 31%;
+  border: 1px solid #BBB;
+  border-radius: 8px;
+  box-shadow: 3px 6px 8px #AAA ;
+  margin: 10px 10px;
+}
+
+.product__card__image {
+  width: 90%;
+  padding: 15px;
+}
+
+.product__card__title {
+  padding-left: 10px;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.product__card__price {
+  padding-left: 10px;
+  font-weight: bold;
+  color: #999;
+  margin-top: 0;
+}
+
+.products__all {
+  position: relative;
+  left: 43%;
+  transform: translateX(-50%);
+  text-align: center;
+  border: 3px solid #F44336;
+  padding: 20px 50px; 
+  font-size: 20px;
+  color: #F44336;
+  line-height: 40px;
+  background-color: #FFF;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+/* Featured Products Styles End */
+
+/* Browse Categories Styles Start */
+
+.browse-cat__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  padding-left: 10px;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.browse-cat__subtitle {
+  padding-left: 10px;
+  color: #999;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.browse-cat__buttons {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 100px;
+}
+
+.browse-cat__buttons li {
+  text-align: center;
+  line-height: 70px;
+  font-size: 24px;
+  width: 15%;
+  height: 70px;
+  border: 3px solid #2196F3;
+  border-radius: 2px;
+  margin: 30px 50px;
+}
+
+.browse-cat__buttons .link {
+  color: #2196F3;
+  text-decoration: none;  
+}
+
+/* Browse Categories Styles End */
+
+/* Footer Styles Start */
+
+.footer__logo {
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+}
+
+.footer__logo #logo-M {
+  font-size: 80px;
+  color: #222;
+}
+
+.footer__logo #logo-F {
+  font-size: 60px;
+  left: -13px;
+}
+
+#logo-border {
+  border-bottom: 2px solid #999;
+  height: 20px;
+  width: 50px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__nav__left {
+  display: flex;
+}
+
+.footer__nav ul {
+  list-style-type: none;
+}
+
+.footer__nav h4 {
+  color: #F44336;
+  margin-bottom: 25px;
+}
+
+.footer__nav__left li {
+  margin: 15px 0;
+  color: #222;
+}
+
+.footer__nav__left .link {
+  text-decoration: none;
+  color: #222;
+}
+
+.footer__nav__right ul {
+  padding-left: 0;
+}
+
+.footer__nav__right li {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 25px; 
+}
+
+/* Footer Styles End */
+
+/* Multilisting Styles Start */
+
+.products__filter {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.products__filter__button {
+  border: 3px solid #BBB;
+  color: #BBB;
+  font-weight: bold;
+  height: 60px;
+  width: 130px;
+  margin: 0 10px;
+  background-color: #FFF;
+}
+
+.products__filter__button.selected {
+  border: 3px solid #F44336;
+  color: #F44336;
+}
+
+.products__filter__status {
+  color: #999;
+  font-size: 22px;
+}
+
+.products__filter__status span {
+  color: #FFC107;
+  font-size: 34px;
+  position: relative;
+  top: 5px;
+  margin-right: 5px;
+}
+
+/* Multilisting Styles End */
+
+/* Single Product Styles Start */
+
+.single-view__container {
+  display: flex;
+}
+
+.single-view__container__image {
+  padding: 20px;
+}
+
+.single-view__container__info {
+  margin: 20px 50px;
+  border: 2px solid #BBB;
+  border-radius: 3px;
+  height: 280px;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 40%;
+  padding: 15px;
+}
+
+.single-view__container__info__title {
+  margin: 10px 0;
+  font-size: 28px;
+}
+
+.single-view__container__info__price {
+  font-weight: bold;
+  font-size: 22px;
+  text-align: right;
+  margin-right: 15px;
+}
+
+.single-view__container__info__footer {
+  border-top: 2px solid #BBB;
+  padding-top: 20px;
+  display: flex;
+}
+
+.single-view__container__info__footer span {
+  flex-grow: 1;
+}
+
+.single-view__container__info__footer button {
+  flex-grow: 1;
+  background-color: #F44336;
+  border: none;
+  height: 60px;
+  border-radius: 50px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* Single Product Styles End */
